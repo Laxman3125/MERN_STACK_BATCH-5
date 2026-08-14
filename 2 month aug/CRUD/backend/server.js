@@ -1,5 +1,10 @@
 
 const mongoose = require("mongoose");
+//POST -> Create Student
+//GET -> Get All Students
+//GET /:id -> Get one Student
+//PUT /:id -> Update Student
+//DELETE /:id -> Delete Student
 
 const connectDB = async () => {
 
