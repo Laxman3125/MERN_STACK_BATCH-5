@@ -1,0 +1,129 @@
+/* ============================================================
+   ADMIN PANEL GLOBAL STYLES - Amazon look & feel
+   ============================================================ */
+
+:root {
+  --amazon-dark: #131921;
+  --amazon-light-dark: #232f3e;
+  --amazon-yellow: #febd69;
+  --amazon-orange: #f0c14b;
+  --amazon-link: #007185;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Amazon Ember", Arial, sans-serif;
+  background-color: #eaeded;
+  color: #0f1111;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* ---- Admin top bar ---- */
+.admin-navbar {
+  background-color: var(--amazon-dark);
+  color: #fff;
+}
+.admin-logo {
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+.admin-logo span {
+  color: var(--amazon-yellow);
+}
+.admin-badge {
+  background-color: var(--amazon-yellow);
+  color: #111;
+  font-size: 0.7rem;
+  padding: 2px 8px;
+  border-radius: 3px;
+  font-weight: 700;
+}
+
+/* ---- Sidebar ---- */
+.admin-sidebar {
+  background-color: var(--amazon-light-dark);
+  color: #fff;
+  min-height: calc(100vh - 56px);
+  padding-top: 15px;
+}
+.admin-sidebar a {
+  color: #ddd;
+  display: block;
+  padding: 10px 18px;
+  border-left: 3px solid transparent;
+}
+.admin-sidebar a:hover,
+.admin-sidebar a.active {
+  background-color: rgba(255, 255, 255, 0.08);
+  border-left-color: var(--amazon-yellow);
+  color: #fff;
+}
+
+/* ---- Buttons ---- */
+.btn-amazon {
+  background-color: var(--amazon-orange);
+  border: 1px solid #a88734;
+  color: #111;
+  font-weight: 500;
+}
+.btn-amazon:hover {
+  background-color: #ddb347;
+  color: #111;
+}
+.btn-amazon-yellow {
+  background-color: var(--amazon-yellow);
+  border: 1px solid #a88734;
+  color: #111;
+  font-weight: 500;
+}
+.btn-amazon-yellow:hover {
+  background-color: #f3a847;
+}
+
+/* ---- Cards / stats ---- */
+.stat-card {
+  background: #fff;
+  border-radius: 6px;
+  padding: 20px;
+  border-left: 4px solid var(--amazon-yellow);
+}
+.stat-card .stat-value {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+.panel {
+  background: #fff;
+  border-radius: 6px;
+  padding: 20px;
+}
+
+/* ---- Login card ---- */
+.login-wrap {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #eaeded;
+}
+.login-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 30px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.thumb {
+  width: 46px;
+  height: 46px;
+  object-fit: contain;
+}

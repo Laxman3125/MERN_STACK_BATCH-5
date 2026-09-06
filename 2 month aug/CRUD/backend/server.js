@@ -1,5 +1,10 @@
 
 const mongoose = require("mongoose");
+
+// 1. Import the package
+const cors = require('cors'); 
+
+
 const express = require("express");
 //POST -> Create Student
 //GET -> Get All Students
@@ -13,7 +18,7 @@ const app = express();
 
 // middleware to convert incoming JSON data into javascript object 
 app.use(express.json());
-
+app.use(cors());
 // function to connect to MongoDB database
 const connectDB = async () => {
 
