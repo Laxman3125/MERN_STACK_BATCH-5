@@ -1,4 +1,8 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
+"use client";
+import "bootstrap/dist/css/bootstrap.min.css";
+import Button from "react-bootstrap/Button";
+import { Form, Table } from "react-bootstrap";
+import { useEffect, useState } from "react";
 
 export default function Home() {
   return (
